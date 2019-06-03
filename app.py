@@ -1,6 +1,8 @@
 from flask import Flask
 from marshmallow import Schema, fields, INCLUDE, pprint, ValidationError
 from flask import abort, request, jsonify
+from calculate_estimates import RentalEstimate
+
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
