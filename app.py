@@ -6,12 +6,10 @@ from marshmallow import Schema, fields, INCLUDE, pprint, ValidationError
 from calculate_estimates import RentalEstimate
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
 
-property_schema = PropertySubmissionSchema()
+# property_schema = PropertySubmissionSchema()
 
-#@app.route('/', methods=['GET'])
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
     return "This is a test"
 
