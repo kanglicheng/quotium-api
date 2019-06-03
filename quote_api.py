@@ -10,7 +10,8 @@ app.config["DEBUG"] = True
 
 property_schema = PropertySubmissionSchema()
 
-@app.route('/', methods=['GET'])
+#@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
     return "This is a test"
 
@@ -43,8 +44,8 @@ def validate_post_data():
     #print(request_json['email'])
 
 
-
-app.run()
+if __name__ == '__main__':
+    app.run()
 
 #curl -i -H "Content-Type: application/json" -X POST -d '{"email":"read", "property_address":"5 my property address", "zip_code":14853,
  #"number_bedrooms":5, "number_bathrooms":5, "square_footage":10000}' http://127.0.0.1:5000/submit
