@@ -7,7 +7,7 @@ from marshmallow import Schema, fields, INCLUDE, pprint, ValidationError
 
 APP = Flask(__name__)
 
-@APP.route('/', methods=['GET'])
+@APP.route('/')
 def hello_world():
     return 'Hello World!'
 
