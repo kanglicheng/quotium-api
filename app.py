@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
-    return 'Hello World!'
+    return 'Welcome to Quotium!'
 
 @app.route('/test', methods=['POST'])
 def post_test():
