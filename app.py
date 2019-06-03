@@ -1,17 +1,9 @@
-import flask
-import json
-from flask import abort, request, jsonify
-from data_validation import PropertySubmissionSchema
-from marshmallow import Schema, fields, INCLUDE, pprint, ValidationError
-from calculate_estimates import RentalEstimate
-
-app = flask.Flask(__name__)
-
-# property_schema = PropertySubmissionSchema()
+from flask import Flask
+app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
-def home():
-    return "This is a test"
+def hello_world():
+    return 'Hello World!'
 
 if __name__ == '__main__':
     app.run()
