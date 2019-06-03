@@ -3,7 +3,7 @@ from flask import Flask
 from marshmallow import Schema, fields, INCLUDE, pprint, ValidationError
 from data_validation import PropertySubmissionSchema
 from flask import abort, request, jsonify
-from calculate_estimates import RentalEstimate as rt
+from calculate_estimates import RentalEstimate
 
 app = Flask(__name__)
 
